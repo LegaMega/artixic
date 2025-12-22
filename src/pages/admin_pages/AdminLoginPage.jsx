@@ -1,4 +1,4 @@
-const CollectionsPage = () => {
+const AdminLoginPage = () => {
     return (
         <div>
             
@@ -6,4 +6,4 @@ const CollectionsPage = () => {
     )
 }
 
-export default CollectionsPage
+export default AdminLoginPage
