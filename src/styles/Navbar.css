@@ -1,3 +1,41 @@
-.class {
-    border-bottom: 1px var(--steel-white-extra-dark);
+.navbar {
+    background: var(--steel-white-extra-bright);
+}
+
+.navbar-inner {
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+/* ====== Navbar Brand ====== */
+
+.navbar-brand {}
+
+.navbar-navigation-item-brand {}
+
+/* ====== Navigation ====== */
+
+.navbar-navigation {}
+
+.navbar-navigation-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-navigation-link {
+}
+
+.navbar-navigation-link a {
+    color: var(--steel-black-extra-light);
+    transition: var(--transition-filter);
+}
+
+.navbar-navigation-link a:hover {
+    filter: var(--filter-brightness);
 }

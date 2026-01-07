@@ -1,6 +1,6 @@
-# ARTIXO
+# ARTIXIC
 
-ARTIXO is a modern, minimalistic web-based art gallery.
+ARTIXIC is a modern, minimalistic web-based art gallery.
 It is designed as a quiet, museum-like environment for displaying digital artwork.
 
 ## Technologies
@@ -20,7 +20,7 @@ Ensure [Node.js](https://nodejs.org/en) is installed on your system.
 
 1. **Clone the repository**
     ```bash
-    git clone https://github.com/LegaMega/artixo
+    git clone https://github.com/LegaMega/artixic
     ```
 2. **Install dependencies**
    ```bash

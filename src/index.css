@@ -80,8 +80,12 @@
     /* ====== Borders ====== */
     --border-white-extra-dark: 1px solid var(--steel-white-extra-dark);
 
+    /* ====== Filters ====== */
+    --filter-brightness: brightness(2.5);
+
     /* ====== Transitions ====== */
-    --transition-ease-in-out: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    --transition-background: background-color 0.2s ease-in-out;
+    --transition-filter: filter 0.2s;
 }
 
 html,

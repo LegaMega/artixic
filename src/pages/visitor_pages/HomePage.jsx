@@ -1,8 +1,12 @@
+import VisitorLayout from '../../components/layout/VisitorLayout'
+
 const HomePage = () => {
     return (
-        <div>
-            Hello, world!
-        </div>
+        <VisitorLayout>
+            <div>
+                Hello, world?
+            </div>
+        </VisitorLayout>
     )
 }
 
