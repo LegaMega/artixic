@@ -4,11 +4,11 @@ ARTIXIC is a modern, minimalistic web-based art gallery.
 It is designed as a quiet, museum-like environment for displaying digital artwork.
 
 ## Technologies
-- **Front-end**: React, JavaScript (ES6+)
-- **Styling**: CSS
-- **Back-end**: Node.js
-- **Build tool**: Vite
-- **Database**: Supabase
+- **Front-end:** React, JavaScript (ES6+)
+- **Styling:** CSS
+- **Back-end:** Node.js
+- **Build tool:** Vite
+- **Database:** Supabase
 
 ## Getting started
 
