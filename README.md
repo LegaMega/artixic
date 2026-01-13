@@ -14,7 +14,7 @@ It is designed as a quiet, museum-like environment for displaying digital artwor
 
 ### Prerequisites
 
-Ensure [Node.js](https://nodejs.org/en) is installed on your system.
+Ensure that [Node.js](https://nodejs.org/en) is installed on your system.
 
 ### Installation
 
