@@ -20,7 +20,7 @@ Ensure that [Node.js](https://nodejs.org/en) is installed on your system.
 
 1. **Clone the repository**
     ```bash
-    git clone https://github.com/LegaMega/artixic
+    git clone https://github.com/christian-coenen/artixic
     ```
 2. **Install dependencies**
    ```bash
