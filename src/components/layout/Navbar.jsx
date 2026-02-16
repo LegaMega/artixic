@@ -17,34 +17,42 @@ const Navbar = () => {
                     </Link>
                 </div>
 
-                <div className='navbar-navigation'>
-                    <ul className='navbar-navigation-list'>
-                        <li className='navbar-navigation-link'>
-                            <NavLink
-                                to='/home'
-                                className={({ isActive }) =>
-                                    isActive
-                                        ? "navbar-navigation-link is-active"
-                                        : "navbar-navigation-link"
-                                }
-                            >
-                                Home
-                            </NavLink>
-                        </li>
-                        <li className='navbar-navigation-link'>
-                            <NavLink to='/art'>Art</NavLink>
-                        </li>
-                        <li className='navbar-navigation-link'>
-                            <NavLink to='/collections'>Collections</NavLink>
-                        </li>
-                        <li className='navbar-navigation-link'>
-                            <NavLink to='/about'>About</NavLink>
-                        </li>
-                    </ul>
+                {/* TODO: rename className below */}
+                <div className='navbar-right'>
+                    <div className='navbar-navigation'>
+                        <ul className='navbar-navigation-list'>
+                            <li className='navbar-navigation-link'>
+                                <NavLink
+                                    to='/home'
+                                    className={({ isActive }) =>
+                                        isActive
+                                            ? "navbar-navigation-link is-active"
+                                            : "navbar-navigation-link"
+                                    }
+                                >
+                                    Home
+                                </NavLink>
+                            </li>
+                            <li className='navbar-navigation-link'>
+                                <NavLink to='/art'>Art</NavLink>
+                            </li>
+                            <li className='navbar-navigation-link'>
+                                <NavLink to='/collections'>Collections</NavLink>
+                            </li>
+                            <li className='navbar-navigation-link'>
+                                <NavLink to='/about'>About</NavLink>
+                            </li>
+                        </ul>
 
-                    {/* Insert button here for mobile devices */}
+                        {/* Insert button here for mobile devices */}
+                    </div>
+
+                    <div className='navbar-language-button'>
+                        <button>
+                            ENG
+                        </button>
+                    </div>
                 </div>
-
             </div>
         </nav>
     )
