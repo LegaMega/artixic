@@ -1,41 +1,79 @@
 .navbar {
-    background: var(--steel-white-extra-bright);
+    background: var(--color-background-navbar);
+    border-bottom: var(--border-navbar);
+    height: var(--height-navbar);
+    padding: 0 1rem;
 }
 
 .navbar-inner {
-    margin: 0 auto;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     box-sizing: border-box;
+    display: flex;
     height: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
-/* ====== Navbar Brand ====== */
+/* === Logo === */
 
-.navbar-brand {}
+.navbar-brand {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
 
-.navbar-navigation-item-brand {}
+.navbar-navigation-item-brand {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-/* ====== Navigation ====== */
+.navbar-logo-text {
+    color: var(--color-text-navbar-logo);
+    font-family: var(--font-family-brand);
+    font-size: var(----font-size-logo-desktop);
+    font-weight: var(--font-weight-brand);
+}
 
-.navbar-navigation {}
+/* === Navigation === */
 
 .navbar-navigation-list {
+    display: flex;
+    height: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
+.navbar-navigation-list li {
+    height: 100%;
+}
+
 .navbar-navigation-link {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding: 0 0rem;
+    max-width: 8rem;
+    min-width: 8rem;
 }
 
 .navbar-navigation-link a {
-    color: var(--steel-black-extra-light);
-    transition: var(--transition-filter);
+    color: var(--color-text-navbar-link);
 }
 
-.navbar-navigation-link a:hover {
-    filter: var(--filter-brightness);
+.navbar-navigation-link.is-active {
+    background: var(--color-background-navbar-active);
+    transition: var(--transition-background);
+}
+
+.navbar-navigation-link:hover {
+    background: var(--color-background-navbar-hover);
+    transition: var(--transition-background);
 }
