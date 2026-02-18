@@ -22,55 +22,65 @@
     /* === Functional colors === */
 
     /* == Global background colors == */
-    --color-background-primary: #F7F8FA; /* Page background */
-    --color-background-secondary: #FCFDFF; /* Layout, cards, highlights, buttons */
-    --color-background-tertiary: #F2F3F5; /* Active hyperlink background, translation buttons */
-    --color-background-quaternary: #EDEEF0; /* Hover, maybe */
+    --color-background-primary: #F7F8FA;
+    --color-background-secondary: #FCFDFF;
+    --color-background-tertiary: #F2F3F5;
+    --color-background-quaternary: #EDEEF0;
 
     /* == Global text colors == */
-    --color-text-primary: #0D0E0F; /* Main headers, primary text */
-    --color-text-secondary: #3C414D; /* Subtitles, icons */
-    --color-text-tertiary: #30343D; /* Nav links, footer text */
+    --color-text-primary: #0D0E0F;
+    --color-text-secondary: #3C414D;
+    --color-text-tertiary: #30343D;
 
     /* == Global border colors == */
-    --color-border-primary: #ebeae8; /* Cards, inputs, buttons */
+    --color-border-primary: #ebeae8;
 
     /* == Brand colors == */
     --color-brand-primary: #73CCFF;
     --color-brand-secondary: #7386FF;
 
     /* == Component background colors == */
+    /* = Navbar background colors = */
     --color-background-navbar: var(--color-background-secondary);
     --color-background-navbar-active: var(--color-background-tertiary);
     --color-background-navbar-hover: var(--color-background-quaternary);
+
     --color-background-footer: var(--color-background-secondary);
     --color-background-section: var(--color-background-secondary);
+
     --color-background-card: var(--color-background-secondary);
-    --color-background-button: var(--color-background-secondary);
+
+    /* = Button background colors = */
+    --color-background-button: var(--color-background-tertiary);
+    --color-background-button-hover: var(--color-background-quaternary);
+    --color-background-language-button: var(--color-background-button);
+    --color-background-language-button-hover: var(--color-background-button-hover);
+
     --color-background-input: var(--color-background-secondary);
     --color-background-translation-button: var(--color-background-tertiary);
 
     /* == Component text colors == */
-    /* = Navbar = */
+    /* = Navbar text colors = */
     --color-text-navbar-logo: var(--color-text-primary);
     --color-text-navbar-item: var(--color-text-tertiary);
     --color-text-navbar-link: var(--color-text-navbar-item);
-    --color-text-navbar-language-button: var(--color-text-navbar-item);
 
+    /* = Footer = */
     --color-text-footer: var(--color-text-tertiary);
-    --color-text-button: var(--color-text-primary);
+
+    /* = Buttons = */
+    --color-text-button: var(--color-text-tertiary);
+    
+
     --color-text-input: var(--color-text-primary);
     --color-text-input-icon: var(--color-text-secondary);
     --color-text-translation-button: var(--color-text-secondary);
     --color-text-card-title: var(--color-text-primary);
     --color-text-card-subtitle: var(--color-text-secondary);
 
-    /* == Component border colors == */
-    --color-border-navbar: var(--color-border-primary);
-    --color-border-card: var(--color-border-primary);
-    --color-border-input: var(--color-border-primary);
-    --color-border-button: var(--color-border-primary);
-    --color-border-searchbar: var(--color-border-primary);
+    /* = Language switcher text colors = */
+    --color-text-language-switcher: var(--color-text-tertiary);
+    --color-text-language-switcher-dropdown: var(--color-text-tertiary);
 
     /* === Typography === */
 
@@ -130,15 +140,17 @@
     --width-navbar-language-button: var(--width-navbar-item);
 
     /* === Borders == */
-    --border-navbar: 1px solid var(--color-border-navbar);
-    --border-card: 1px solid var(--color-border-card);
+    --border-primary: 1px solid var(--color-border-primary);
+    --border-navbar: var(--border-primary);
+    --border-language-switcher-dropdown: var(--border-primary);
+    --border-card: var(--border-primary);
 
     /* === Filters === */
     --filter-brightness: brightness(2.5);
 
     /* === Transitions === */
     --transition-background: background-color 0.2s ease-in-out;
-    --transition-filter: filter 0.2s;
+    --transition-transform: transform 0.2s ease-in-out;
 }
 
 html,

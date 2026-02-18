@@ -1,11 +1,12 @@
 {/* CURRENTLY DESKTOP ONLY! */ }
-
 import { Link, NavLink } from 'react-router-dom'
 import LogoArtixic from '../../assets/icons/LogoArtixic'
+import LanguageSwitcher from '../features/language/LanguageSwitcher'
 import '../../styles/Navbar.css'
 
 const Navbar = () => {
-    {/* Insert logic for hamburger menu for screens less than [x] width */ }
+
+    {/* TODO: Insert logic for hamburger menu for screens less than [x] width */ }
 
     return (
         <nav className='navbar'>
@@ -44,13 +45,12 @@ const Navbar = () => {
                             </li>
                         </ul>
 
-                        {/* Insert button here for mobile devices */}
+                        {/* TODO: Insert hamburger menu button here for mobile devices */}
                     </div>
+                    
 
-                    <div className='navbar-language-button'>
-                        <button>
-                            ENG
-                        </button>
+                    <div className='navbar-language'>
+                        <LanguageSwitcher />
                     </div>
                 </div>
             </div>
