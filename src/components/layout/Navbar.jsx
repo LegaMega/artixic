@@ -1,12 +1,23 @@
 {/* CURRENTLY DESKTOP ONLY! */ }
+import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import LogoArtixic from '../../assets/icons/LogoArtixic'
+import HamburgerButton from '../features/navigation/HamburgerButton'
+import DrawerNavigation from '../features/navigation/DrawerNavigation'
 import LanguageSwitcher from '../features/language/LanguageSwitcher'
 import '../../styles/Navbar.css'
 
 const Navbar = () => {
-
     {/* TODO: Insert logic for hamburger menu for screens less than [x] width */ }
+    const [isDrawerNavigationOpen, setIsDrawerNavigationOpen] = useState(false)
+
+    const toggleDrawerNavigation = () => {
+        setIsDrawerNavigationOpen(prev => !prev)
+    }
+
+    const closeDrawerNavigation = () => {
+        setIsDrawerNavigationOpen(false)
+    }
 
     return (
         <nav className='navbar'>
@@ -45,15 +56,24 @@ const Navbar = () => {
                             </li>
                         </ul>
 
-                        {/* TODO: Insert hamburger menu button here for mobile devices */}
+                        <div className='navbar-hamburger-button'>
+                            <HamburgerButton
+                                isOpen={isDrawerNavigationOpen}
+                                onToggle={toggleDrawerNavigation}
+                            />
+                        </div>
                     </div>
-                    
 
                     <div className='navbar-language'>
                         <LanguageSwitcher />
                     </div>
                 </div>
             </div>
+
+            <DrawerNavigation
+                isOpen={isDrawerNavigationOpen}
+                onClose={closeDrawerNavigation}
+            />
         </nav>
     )
 }

@@ -26,6 +26,7 @@
     --color-background-secondary: #FCFDFF;
     --color-background-tertiary: #F2F3F5;
     --color-background-quaternary: #EDEEF0;
+    --color-background-quinary: #E8E9EB;
 
     /* == Global text colors == */
     --color-text-primary: #0D0E0F;
@@ -42,8 +43,9 @@
     /* == Component background colors == */
     /* = Navbar background colors = */
     --color-background-navbar: var(--color-background-secondary);
-    --color-background-navbar-active: var(--color-background-tertiary);
+    --color-background-navbar-is-active: var(--color-background-tertiary);
     --color-background-navbar-hover: var(--color-background-quaternary);
+    --color-background-navbar-active: var(--color-background-quinary);
 
     --color-background-footer: var(--color-background-secondary);
     --color-background-section: var(--color-background-secondary);
@@ -53,6 +55,7 @@
     /* = Button background colors = */
     --color-background-button: var(--color-background-tertiary);
     --color-background-button-hover: var(--color-background-quaternary);
+    --color-background-button-active: var(--color-background-quinary);
     
     --color-background-input: var(--color-background-secondary);
     --color-background-translation-button: var(--color-background-tertiary);
@@ -60,7 +63,12 @@
     /* = Language switcher background color = */
     --color-background-language-switcher: var(--color-background-button);
     --color-background-language-switcher-hover: var(--color-background-button-hover);
+    --color-background-language-switcher-active: var(--color-background-button-active);
     --color-background-language-switcher-dropdown-option-hover: var(--color-background-button-hover);
+    --color-background-language-switcher-dropdown-option-active: var(--color-background-button-active);
+
+    /* = Drawer navigation background color = */
+    --color-background-drawer-navigation: var(--color-background-secondary);
 
     /* == Component text colors == */
     /* = Navbar text colors = */
