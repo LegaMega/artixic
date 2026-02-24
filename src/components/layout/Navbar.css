@@ -47,6 +47,9 @@
 }
 
 /* == Navigation == */
+.navbar-navigation { 
+    display: flex;
+}
 
 .navbar-navigation-list {
     display: flex;
@@ -111,10 +114,12 @@
     min-width: var(--width-navbar-item);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 50em) {
+    .navbar-navigation-list {
+        display: none;
+    }
+
     .navbar-hamburger-button {
-        display: block;
+        display: flex;
     }
 }
-
-@media (max-width: 768px) {}

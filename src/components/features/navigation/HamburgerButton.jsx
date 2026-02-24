@@ -1,4 +1,5 @@
 import { Menu } from 'lucide-react'
+import './HamburgerButton.css'
 
 const HamburgerButton = ({ isNavigationMenuOpen, onNavigationMenuToggle }) => {
     return (

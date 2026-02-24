@@ -5,7 +5,7 @@ import LogoArtixic from '../../assets/icons/LogoArtixic'
 import HamburgerButton from '../features/navigation/HamburgerButton'
 import DrawerNavigation from '../features/navigation/DrawerNavigation'
 import LanguageSwitcher from '../features/language/LanguageSwitcher'
-import '../../styles/Navbar.css'
+import './Navbar.css'
 
 const Navbar = () => {
     {/* TODO: Insert logic for hamburger menu for screens less than [x] width */ }

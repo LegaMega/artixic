@@ -103,34 +103,6 @@
     /* = Base Font Size = */
     --font-size-base: 1rem;
 
-    /* = Logo font sizes = */
-    --font-size-logo-mobile: 0.625rem;
-    --font-size-logo-desktop: 2rem;
-
-    /* = Navbar item font sizes = */
-    --font-size-navbar-item-mobile: 0.5rem;
-    --font-size-navbar-item-desktop: 0.75rem;
-
-    /* = Hero font sizes = */
-    --font-size-hero-title-mobile: 2.625rem;
-    --font-size-hero-title-desktop: 3.5rem;
-    --font-size-hero-subtitle-mobile: 1rem;
-    --font-size-hero-subtitle-desktop: 1.5rem;
-
-    /* = Section headers font sizes = */
-    --font-size-section-mobile: 1rem;
-    --font-size-section-desktop: 1.5rem;
-
-    /* = Artwork font sizes = */
-    --font-size-art-title-mobile: 0.625rem;
-    --font-size-art-title-desktop: 1rem;
-    --font-size-art-subtitle-mobile: 0.5rem;
-    --font-size-art-subtitle-desktop: 0.75rem;
-
-    /* = Footer font sizes = */
-    --font-size-footer-mobile: 0.375rem;
-    --font-size-footer-desktop: 0.75rem;
-
     /* Add more font size variables for all pages, sections or other parts of the website (visitor and admin envorinments) */
 
     /* == Font weight == */
