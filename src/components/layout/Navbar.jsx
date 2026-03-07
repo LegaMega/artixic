@@ -20,15 +20,12 @@ const Navbar = () => {
     return (
         <nav className='navbar'>
             <div className='navbar-inner'>
-                <div className='navbar-brand'>
-                    <Link to='/home' className='navbar-navigation-item-brand'>
-                        <LogoArtixic />
-                        <span className='navbar-logo-text'>ARTIXIC</span>
-                    </Link>
-                </div>
+                <Link to='/home' className='navbar-logo'>
+                    <LogoArtixic />
+                    <span className='navbar-logo-text'>ARTIXIC</span>
+                </Link>
 
-                {/* TODO: rename className below */}
-                <div className='navbar-right'>
+                <div className='navbar-actions'>
                     <div className='navbar-navigation'>
                         <ul className='navbar-navigation-list'>
                             <li className='navbar-navigation-link'>
@@ -36,7 +33,7 @@ const Navbar = () => {
                                     to='/home'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "navbar-navigation-link current-page"
+                                            ? "navbar-navigation-link current"
                                             : "navbar-navigation-link"
                                     }
                                 >
@@ -49,7 +46,7 @@ const Navbar = () => {
                                     to='/art'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "navbar-navigation-link current-page"
+                                            ? "navbar-navigation-link current"
                                             : "navbar-navigation-link"
                                     }
                                 >
@@ -62,7 +59,7 @@ const Navbar = () => {
                                     to='/collections'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "navbar-navigation-link current-page"
+                                            ? "navbar-navigation-link current"
                                             : "navbar-navigation-link"
                                     }
                                 >
@@ -75,7 +72,7 @@ const Navbar = () => {
                                     to='/about'
                                     className={({ isActive }) =>
                                         isActive
-                                            ? "navbar-navigation-link current-page"
+                                            ? "navbar-navigation-link current"
                                             : "navbar-navigation-link"
                                     }
                                 >
